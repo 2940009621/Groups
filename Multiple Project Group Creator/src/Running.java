@@ -6,6 +6,7 @@ public class Running
 		static ArrayList <String> name = new ArrayList();
 		static ArrayList <String> name2 = new ArrayList();
 		static ArrayList <String> RandomNameList = new ArrayList();
+		static ArrayList <String> group = new ArrayList();
 		public static void main(String[] args) throws IOException
 			{
 				Scanner names = new Scanner (new File("StudentList.txt") );
@@ -30,9 +31,16 @@ public class Running
 				
 				
 				for(int i = 1; i <= groups; i++){
-					for(int q = 0; q < RandomNameList.size()/groups; q++){
-						
+					
+					
+					System.out.println("Students in group " + i + " are");
+					
+					for(int a = 0; a < name2.size()/groups; a++){
+						System.out.print(RandomNameList.get(0) + " ");
+						RandomNameList.remove(0);
 					}
+					
+					System.out.println("");
 				}
 				
 				
