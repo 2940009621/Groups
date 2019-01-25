@@ -12,18 +12,14 @@ public class twodarray
 		static String RandomList [] [] = new String [22][3];
 		static ArrayList<String> A = new ArrayList();
 		
-		static int count = 0;
-		static int groupcount = 1;
+		
 		
 		
 		public static void main(String[] args) throws IOException
 			{
 				
 
-				System.out.println("How many people do you want in one group?");
-				Scanner userinput1 = new Scanner(System.in);
-				int people = userinput1.nextInt();	
-				int group = A.size()/people;
+				
 				
 				
 				
@@ -40,7 +36,7 @@ public class twodarray
 				
 				
 				
-				for(int i = 0; i < 22; i++){
+		/**		for(int i = 0; i < 22; i++){
 					name[i][0] = A.get(i);
 					name2[i][0] = A.get(i);
 				}	
@@ -49,12 +45,20 @@ public class twodarray
 					name[i][1] = a;
 					name2[i][1] = a;
 					a += 1;
-			}
-				
-				
+			}**/
+				System.out.println("How many people do you want in one group?");
+				Scanner userinput1 = new Scanner(System.in);
+				int people = userinput1.nextInt();	
+				int group = A.size()/people;
+				int count = 0;
+				int groupcount = 1;
 				
 				
 		//First Round		
+				
+				System.out.println("First round");
+				System.out.println();
+				System.out.println();
 				for(int i = 0; i < group; i++){
 					System.out.println("Students in group " + groupcount + " are");
 					
@@ -63,7 +67,7 @@ public class twodarray
 						System.out.println();
 						A.remove(0);
 					}
-					groupcount ++;
+					groupcount += 1;
 				}
 				
 				if(!A.isEmpty()){
@@ -77,6 +81,13 @@ public class twodarray
 				
 				
 				//First Round Finish
+				
+				
+				//Second round
+				System.out.println("Secound round");
+				System.out.println();
+				System.out.println();
+				
 				
 			}
 				
