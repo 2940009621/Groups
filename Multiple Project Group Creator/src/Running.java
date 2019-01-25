@@ -31,7 +31,7 @@ public class Running
 				name.remove(random1);
 				}
 				
-				if(name.size()%groups == 0){
+				if(name2.size()%groups == 0){
 				
 				for(int i = 1; i <= groups; i++){
 					
@@ -60,11 +60,11 @@ public class Running
 						
 						System.out.println("Students in group " + (B + 1) + " are: ");
 						
-						while(!RandomNameList.isEmpty()){
-							System.out.print(RandomNameList.get(0));
+						while(!WaitingList.isEmpty()){
+							System.out.print(WaitingList.get(0));
+							WaitingList.remove(0);
 						}
 						
-						System.out.println("Students in group " + i + " are");
 						
 						for(int a = 0; a < name2.size()/groups; a++){
 							System.out.print(RandomNameList.get(0) + " ");
